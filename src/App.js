@@ -7,6 +7,7 @@ import "./App.css";
 class App extends Component {
   render() {
     console.log(translate());
+    console.log(window.navigator.language);
     return (
       <div className="App">
         <div className="App-header">
