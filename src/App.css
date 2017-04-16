@@ -9,7 +9,7 @@
 
 .App-header {
   background-color: #222;
-  height: 150px;
+  height: 250px;
   padding: 20px;
   color: white;
 }
@@ -21,4 +21,30 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.langSelector {
+  margin: 30px 0;
+}
+
+.langSelector button {
+  display: inline-block;
+  cursor: pointer;
+  background: #333;
+  color: #ccc;
+  border: none;
+  border-radius: 2px;
+}
+
+.langSelector button:focus {
+  outline: none;
+}
+
+.langSelector button:not(:first-child) {
+  margin-left: 5px;
+}
+
+.langSelector .is-active{
+  background: #61dafb;
+  color: #fff;
 }
