@@ -10,7 +10,7 @@ import "./App.css";
 
 addLocaleData([...en, ...fr]);
 
-const locale = navigator.language || "fr";
+const locale = localStorage.getItem("lang") || navigator.language || "fr";
 
 const getMessages = locale => {
   switch (locale) {
@@ -27,6 +27,7 @@ class App extends Component {
   };
 
   langSwitch = locale => {
+    localStorage.setItem("lang", locale);
     this.setState({
       lang: locale
     });
